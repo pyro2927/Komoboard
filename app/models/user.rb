@@ -1,5 +1,9 @@
 class User
   include Mongoid::Document
+  # modified by programmer
+  has_many :dashboards
+  
+  
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :confirmable,

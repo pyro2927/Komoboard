@@ -1,8 +1,6 @@
 Komoboard::Application.routes.draw do
   get "dashboards/show"
 
-  get "dashboard/show"
-
   authenticated :user do
     root :to => 'home#index'
   end
